@@ -1,0 +1,11 @@
+int a, b, c, n10, n5, n1, r;
+	printf("请输入购买金额何付款金额:\n");
+		scanf("%d%d", &a, b);
+		c = b - a;
+		n10 = c / 10;
+		r = c % 10;
+		n5 = r /5;
+		n1=r/5;
+		printf("应找金额:%d张10元,%d张5元,%d张一元\n",n10,n5,n1);
+		system("pause");
+}
