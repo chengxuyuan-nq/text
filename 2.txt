@@ -1,0 +1,11 @@
+#include<stdio.h>
+void main()
+{
+	char a;
+	printf("输入大写字母:\n");
+	a= getchar();
+	a=a+32;
+	printf("所对应小写字母:\n");
+	putchar(a); 
+	putchar('\n');
+}
