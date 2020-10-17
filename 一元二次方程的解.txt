@@ -1,0 +1,27 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+void main()
+{
+	float a, b, c, q, x1, x2;
+	printf("请输入一元二次方程中系数a,b,c的值:\n");
+	scanf("%f%f%f", &a, &b, &c);
+	if (a == 0)
+	{
+		printf("不是一元二次方程:\n");
+		exit(0);
+	}
+	q = b*b - 4 * a*c;
+		if (q > 0)
+		{
+			x1 = (-b + sqrt(q)) / (2 * a);
+			x2 = (-b - sqrt(q)) / (2 * a);
+			printf("方程有两个解:\nx1=%f,x2=%f\n", x1, x2);
+		}
+		else if (q == 0)
+			printf("方程只有一个解:\nx=%f\n", -b / (2 * a));
+		else
+			printf("方程无实数根\n");
+		system("pause");
+}
