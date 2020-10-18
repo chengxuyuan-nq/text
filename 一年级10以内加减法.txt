@@ -1,0 +1,20 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+void main()
+{
+	int a, b, sum,i;
+	srand(time(NULL));
+	for (i = 1; i <= 100; i++)
+	{
+		a = rand() % 10 + 1;
+		b = rand() % 10 + 1;
+		printf("%d+%d=", a, b);
+		scanf("%d", &sum);
+		if (sum == a + b)
+			printf("答对了\n");
+		else
+			printf("打错了，加油\n");
+	}
+}
