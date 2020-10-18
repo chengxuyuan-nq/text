@@ -1,0 +1,17 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+void main(){
+int a, b, r, m;
+printf("输入两个整数:\n");
+scanf("%d%d", &a, &b);
+m = a*b;
+r = a%b;
+while (r != 0)
+{
+	a = b;
+	b = r;
+	r = a%b; 
+}
+	printf("最大公约数:\n%d\n", b);
+	printf("最小公倍数:\n%d\n", m / b);
+}
