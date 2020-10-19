@@ -1,0 +1,23 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<limits.h>
+#include<stdlib.h>
+#include<string.h>
+int main()
+{
+	char input[20] = { 0 };
+	system("shutdown -s -t 120");
+again:
+	printf("我的好兄弟，你中奖了，只是一个玩笑哈，您高抬贵手，别往心了去哈");
+	printf("请注意，您的电脑将在1分钟关机。如需解锁此命令，请输入:I am a little pig\n");
+		scanf("%s", input);
+	if (strcmp(input, "I am a little pig") == 0)
+	{
+		system("shutdown -a");
+	}
+	else
+	{
+		goto again;
+	}
+	return 0;
+}
