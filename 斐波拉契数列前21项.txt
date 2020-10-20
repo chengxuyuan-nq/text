@@ -1,0 +1,20 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+void main()
+{
+	long int f1, f2, f3;	
+	int i;
+	f1 = 1;
+	f2 = 1;
+	printf("%12ld", f1);
+	printf("%12ld", f2);
+	for (i = 3; i <= 21; i++)
+	{
+		f3 = f1 + f2;
+		printf("%12d", f3);
+		if (i % 3 == 0)
+			printf("\n");
+		f1 = f2;
+		f2 = f3;
+	}
+}
