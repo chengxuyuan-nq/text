@@ -1,0 +1,12 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+void main()
+{
+	int val;
+	printf("如果动物有毛发，回答1，否则回答0\n");
+	scanf("%d", &val);
+	if (val)
+		printf("是哺乳动物\n");
+	else
+		printf("是鸟\n");
+}
