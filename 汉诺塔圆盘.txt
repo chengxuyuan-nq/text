@@ -1,0 +1,19 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int hanoi(int n)
+{
+	if (n == 1)
+		return 1;
+	else
+		return 2 * hanoi(n - 1) + 1;
+}
+int main()
+{
+	int n,num;
+	printf("请输入汉诺塔的圆盘个数:");
+	scanf("%d", &n);
+	num = hanoi(n);
+	printf("%d个圆盘共需移动%d次\n", n, num);
+	return 0;
+
+}
